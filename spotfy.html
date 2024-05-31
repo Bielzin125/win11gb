@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotpobre</title>
+    <style>
+        .lista {
+            border: 1px solid #333333a2;
+            background-color: #333333e9;
+            width: 200px;
+            height: 100vh;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            z-index: 999;
+
+
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color:  #333333e9;
+        }
+
+        #mega {
+            border-radius: 50%;
+            width: 90px;
+            position: absolute;
+            bottom: 20%;
+            right: 30%;
+        }
+
+        #cringe {
+            border-radius: 50%;
+
+        }
+
+      #pause {
+        width: 50px;
+        position: absolute;
+        bottom: 10%;
+        right: 39%;
+        cursor: pointer;
+
+      }
+      #play {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 1%;
+        right: 39%;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 3px solid #333;
+        
+      }
+      
+     button {
+        background-color:  #282828;
+     }
+    </style>
+</head>
+<body>
+    <div class="lista">
+        <img src="megafone.jpg" alt="musica" id="mega">
+        <img src="cringe.jpg" alt="cringe" id="cringe" width="70px">
+        <input type="image" src="playimg.png" id="pause" onclick="audioplay()">
+       <button id="play" onclick="audiopause()">
+        <b>||</b>
+       </button>
+        <audio src="takaba.mp3" id="myaudio"></audio>
+    </div>
+
+    <script>
+        function audioplay() {
+            let x = document.getElementById("myaudio");
+            x.play();
+        }
+
+        function audiopause() {
+            let x = document.getElementById("myaudio");
+            x.pause()
+        }
+    </script>
+</body>
+</html>
