@@ -21,3 +21,7 @@ function spot() {
 function cmd() {
     window.location.href = 'comand.html';
 }
+
+function comd() {
+    window.location.href = 'comand.html';
+}
