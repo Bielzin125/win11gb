@@ -25,3 +25,7 @@ function cmd() {
 function comd() {
     window.location.href = 'comand.html';
 }
+
+function discord() {
+    window.location.href = 'https://discord.com/';
+}
