@@ -29,3 +29,7 @@ function comd() {
 function discord() {
     window.location.href = 'https://discord.com/';
 }
+
+function microsoft() {
+    window.location.href = 'store.html'
+}

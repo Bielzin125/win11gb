@@ -157,3 +157,9 @@ label {
     font-size: 10px;
     padding-right: 20px;
 }
+
+#mi {
+    position: absolute;
+    bottom: 6%;
+    left: 280px;
+}
